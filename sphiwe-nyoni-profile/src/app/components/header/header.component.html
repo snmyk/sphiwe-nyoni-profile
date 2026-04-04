@@ -1,0 +1,57 @@
+<header class="flex justify-between border-b border-gray-800 p-4 relative">
+  <a href="/" class="text-content-light"
+    >sphiwe<span class="text-highlight">.</span>
+  </a>
+  <nav class="flex space-x-4 text-content-dark header-nav">
+    <a
+      *ngFor="let link of navLinks"
+      href="{{ link.url }}"
+      class="text-content hover:text-highlight transition-colors duration-300"
+      >{{ link.name }}</a
+    >
+  </nav>
+  <button
+    class="text-content hover:text-highlight focus:outline-none button-primary hamburger md:hidden"
+    (click)="toggleMenu()"
+  >
+    <svg
+      *ngIf="!isOpen"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#e3e3e3"
+    >
+      <path
+        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+      />
+    </svg>
+    <svg
+      *ngIf="isOpen"
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
+      fill="#e3e3e3"
+    >
+      <path
+        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+      />
+    </svg>
+  </button>
+  <div
+    [ngClass]="showSideMenu ? 'flex' : 'hidden'"
+    class="sidemenu items-start space-y-4 p-4 bg-black-900 absolute top-full left-0 w-full transition-transform duration-300 ease-in-out"
+  >
+    <nav
+      class="flex space-x-4 text-content-dark flex-col w-full items-start gap-6"
+    >
+      <a
+        *ngFor="let link of navLinks"
+        href="{{ link.url }}"
+        class="text-content hover:text-highlight transition-colors duration-300 w-full text-left"
+        >{{ link.name }}</a
+      >
+    </nav>
+  </div>
+</header>

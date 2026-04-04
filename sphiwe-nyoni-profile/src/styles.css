@@ -1,2 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+:root {
+  --primary-highlight: #10b77f;
+  --primary-text-color: #737b8c;
+  --secondary-text-color: #2d3748;
+  --accent-color: #4a5568;
+  --primary-text-color-light: #edf2f7;
+  --background-color: #1a202c;
+}
+
+/* header {
+  border-bottom: #edf2f7 1px solid;
+  background-color: var(--background-color);
+} */
+
+.text-content-light {
+  color: var(--primary-text-color-light);
+}
+
+.text-content-dark {
+  color: var(--primary-text-color);
+}
+
+.text-highlight {
+  color: var(--primary-highlight);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.button-primary:hover {
+  cursor: pointer;
+}
+
+.sidemenu a:hover {
+  border-bottom: var(--accent-color) 1px solid;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block !important;
+  }
+  .header-nav {
+    display: none !important;
+  }
+}

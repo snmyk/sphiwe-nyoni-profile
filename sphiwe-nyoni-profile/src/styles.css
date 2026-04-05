@@ -23,7 +23,7 @@
   color: var(--primary-text-color);
 }
 
-.text-highlight {
+.text-content-highlight {
   color: var(--primary-highlight);
 }
 
@@ -41,6 +41,10 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+.lime {
+  background-color: #10b77f;
 }
 
 @media (max-width: 768px) {

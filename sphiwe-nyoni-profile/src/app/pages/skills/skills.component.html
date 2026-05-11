@@ -1,0 +1,10 @@
+<div class="flex justify-start items-start flex-col gap-4 px-25">
+  <h1 class="text-content-highlight text-2xl">SKILLS</h1>
+  <h2 class="text-content-light text-3xl">Technologies and Practices</h2>
+  <div class="flex flex-row gap-10 bg-red flex-wrap">
+    <app-skill-card
+      *ngFor="let skill of skills"
+      [skill]="skill"
+    ></app-skill-card>
+  </div>
+</div>

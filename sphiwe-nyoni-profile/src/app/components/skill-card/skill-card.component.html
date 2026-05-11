@@ -1,0 +1,11 @@
+<div class="flex justify-start items-start flex-col w-72 gap-4">
+  <h1 class="text-content-dark">{{ skill.name }}</h1>
+  <div class="flex gap-5 flex-wrap">
+    <div
+      *ngFor="let s of skill.skills"
+      class="text-content-dark text-xs bg-gray-800 px-2 flex justify-center items-center rounded-md hover:border-green-500 border border-solid border-transparent transition-colors duration-300 w-fit py-2"
+    >
+      {{ s }}
+    </div>
+  </div>
+</div>

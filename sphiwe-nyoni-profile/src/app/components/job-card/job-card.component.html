@@ -1,0 +1,10 @@
+<div class="border-l border-solid border-green-900 px-4 flex flex-col gap-2">
+  <div class="flex justify-between items-center">
+    <h2 class="text-content-light text-2xl">{{ job.title }}</h2>
+    <h3 class="text-content-dark">{{ job.duration }}</h3>
+  </div>
+  <h3 class="text-content-highlight">{{ job.company }}</h3>
+  <ul class="list-disc list-inside text-content-dark">
+    <li *ngFor="let item of job.list">{{ item }}</li>
+  </ul>
+</div>

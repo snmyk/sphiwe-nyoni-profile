@@ -1,17 +1,17 @@
 <header class="flex justify-between border-b border-gray-800 p-4 relative">
-  <a href="/" class="text-content-light"
-    >sphiwe<span class="text-highlight">.</span>
+  <a href="/" class="text-content-light font-bold"
+    >sphiwe<span class="text-content-highlight">.</span>
   </a>
   <nav class="flex space-x-4 text-content-dark header-nav">
     <a
       *ngFor="let link of navLinks"
-      href="{{ link.url }}"
-      class="text-content hover:text-highlight transition-colors duration-300"
+      href="#{{ link.url }}"
+      class="text-content hover:text-content-highlight transition-colors duration-300"
       >{{ link.name }}</a
     >
   </nav>
   <button
-    class="text-content hover:text-highlight focus:outline-none button-primary hamburger md:hidden"
+    class="text-content hover:text-content-highlight focus:outline-none button-primary hamburger md:hidden"
     (click)="toggleMenu()"
   >
     <svg
@@ -48,8 +48,8 @@
     >
       <a
         *ngFor="let link of navLinks"
-        href="{{ link.url }}"
-        class="text-content hover:text-highlight transition-colors duration-300 w-full text-left"
+        href="#{{ link.url }}"
+        class="text-content hover:text-content-highlight transition-colors duration-300 w-full text-left"
         >{{ link.name }}</a
       >
     </nav>

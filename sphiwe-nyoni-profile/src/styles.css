@@ -10,10 +10,9 @@
   --background-color: #1a202c;
 }
 
-/* header {
-  border-bottom: #edf2f7 1px solid;
-  background-color: var(--background-color);
-} */
+html {
+  scroll-behavior: smooth;
+}
 
 .text-content-light {
   color: var(--primary-text-color-light);

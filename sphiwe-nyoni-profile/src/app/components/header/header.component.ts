@@ -15,11 +15,11 @@ export class HeaderComponent {
   showSideMenu = false;
 
   navLinks: NavLink[] = [
-    { name: 'About', url: '/about' },
-    { name: 'Skills', url: '/skills' },
-    { name: 'Experience', url: '/experience' },
-    { name: 'Projects', url: '/projects' },
-    { name: 'Contact', url: '/contact' },
+    { name: 'About', url: 'about' },
+    { name: 'Skills', url: 'skills' },
+    { name: 'Experience', url: 'experience' },
+    { name: 'Projects', url: 'projects' },
+    { name: 'Contact', url: 'contact' },
   ];
 
   toggleMenu() {

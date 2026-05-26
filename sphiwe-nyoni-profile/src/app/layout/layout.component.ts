@@ -5,6 +5,7 @@ import { AboutComponent } from '../pages/about/about.component';
 import { SkillsComponent } from '../pages/skills/skills.component';
 import { WorkExperienceComponent } from '../pages/work-experience/work-experience.component';
 import { ProjectsComponent } from '../pages/projects/projects.component';
+import { ContactComponent } from '../pages/contact/contact.component';
 import { FooterComponent } from '../components/footer/footer.component';
 
 @Component({
@@ -17,6 +18,7 @@ import { FooterComponent } from '../components/footer/footer.component';
     SkillsComponent,
     WorkExperienceComponent,
     ProjectsComponent,
+    ContactComponent,
     FooterComponent,
   ],
   templateUrl: './layout.component.html',

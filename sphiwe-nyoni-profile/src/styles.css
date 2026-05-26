@@ -8,6 +8,7 @@
   --accent-color: #4a5568;
   --primary-text-color-light: #edf2f7;
   --background-color: #1a202c;
+  --error-color: #e53e3e;
 }
 
 html {
@@ -24,6 +25,10 @@ html {
 
 .text-content-highlight {
   color: var(--primary-highlight);
+}
+
+.text-content-error {
+  color: var(--error-color);
 }
 
 a:hover {

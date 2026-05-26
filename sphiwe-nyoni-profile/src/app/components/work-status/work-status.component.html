@@ -1,12 +1,16 @@
 <div
-  class="flex justify-center items-center gap-2 border border-solid border-green-300 w-fit px-3 rounded-xl backdrop-opacity-5"
+  [ngClass]="workStatusModel.borderColour"
+  class="flex justify-center items-center gap-2 border border-solid w-fit px-3 rounded-xl backdrop-opacity-5"
 >
   <span
     class="animate-ping rounded-full flex justify-center items-center text-xs"
   >
     <span
-      class="inline-flex h-2 w-2 rounded-full bg-green-500 opacity-75"
+      [ngClass]="workStatusModel.pingAnimationColour"
+      class="inline-flex h-2 w-2 rounded-full opacity-75"
     ></span>
   </span>
-  <span class="text-content-highlight text-base">{{ workStatus }}</span>
+  <span [ngClass]="workStatusModel.textColour" class="text-base">{{
+    workStatusModel.workStatus
+  }}</span>
 </div>

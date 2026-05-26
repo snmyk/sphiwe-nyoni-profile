@@ -8,4 +8,6 @@ import { WorkStatusComponent } from '../../components/work-status/work-status.co
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent {}
+export class HomeComponent {
+  protected workStatus: string = 'unavailable';
+}

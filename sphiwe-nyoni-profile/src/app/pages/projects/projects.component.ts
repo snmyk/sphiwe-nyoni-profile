@@ -17,7 +17,7 @@ export class ProjectsComponent {
       description:
         'A movie search web app that allows users to search for movies by title, genre, or keyword.',
       imageUrl: './assets/incredible-movies.png',
-      liveDemoUrl: 'https://sphiwenyoni.netlify.app/',
+      liveDemoUrl: 'https://incredibe-movies.netlify.app/',
       github: 'https://github.com/snmyk/MovieApp',
     },
     {

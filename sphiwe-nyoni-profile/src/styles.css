@@ -58,4 +58,8 @@ a:hover {
   .header-nav {
     display: none !important;
   }
+  .small-screen {
+    padding: 3px 5px;
+    margin: 0;
+  }
 }

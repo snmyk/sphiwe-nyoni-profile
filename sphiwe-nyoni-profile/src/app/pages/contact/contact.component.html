@@ -1,4 +1,4 @@
-<div class="flex justify-start items-start flex-col gap-4 px-25" id="contact">
+<div class="flex justify-start items-start flex-col gap-4" id="contact">
   <h1 class="text-content-highlight text-2xl">CONTACT</h1>
   <h2 class="text-content-light text-3xl">Let's work together!</h2>
   <h2 class="text-content-dark text-xl">
@@ -9,7 +9,7 @@
     class="flex flex-col gap-8 w-full"
     *ngIf="!isLoading && !sendingMessage && feedbackMessage === ''"
   >
-    <div class="w-3/6">
+    <div class="w-3/6 full-screen">
       <label for="name" class="text-content-light">Name</label>
       <input
         type="text"
@@ -19,7 +19,7 @@
         class="w-full p-2 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 text-content-light w-full"
       />
     </div>
-    <div class="w-3/6">
+    <div class="w-3/6 full-screen">
       <label for="email" class="text-content-light">Email</label>
       <input
         type="email"
@@ -29,7 +29,7 @@
         class="w-full p-2 border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-green-700 text-content-light w-full"
       />
     </div>
-    <div class="w-3/6">
+    <div class="w-3/6 full-screen">
       <label for="message" class="text-content-light">Message</label>
       <textarea
         id="message"
@@ -42,7 +42,7 @@
     <div>
       <button
         (click)="onSubmit()"
-        class="px-6 py-2 flex justify-center items-center gap-2 button-primary lime rounded-md hover:brightness-125 transition-colors duration-300"
+        class="px-6 py-2 flex justify-center small-screen items-center gap-2 button-primary lime rounded-md hover:brightness-125 transition-colors duration-300"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

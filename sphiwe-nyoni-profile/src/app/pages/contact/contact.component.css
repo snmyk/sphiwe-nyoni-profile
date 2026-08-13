@@ -21,3 +21,10 @@
     inset: 0 0 0 35px;
   }
 }
+
+@media (max-width: 768px) {
+  .full-screen {
+    width: 100%;
+    padding: 3px 0px;
+  }
+}

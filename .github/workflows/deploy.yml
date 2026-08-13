@@ -29,9 +29,11 @@ jobs:
                   cache: npm
 
             - name: Install dependencies
+              working-directory: ./sphiwe-nyoni-profile
               run: npm ci
 
             - name: Build Angular app
+              working-directory: ./sphiwe-nyoni-profile
               run: npm run build -- --configuration production
 
             - name: Setup Pages
@@ -40,7 +42,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./dist/sphiwe-nyoni-profile/browser
+                  path: ./sphiwe-nyoni-profile/dist/sphiwe-nyoni-profile/browser
 
     deploy:
         environment:

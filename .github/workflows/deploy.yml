@@ -30,7 +30,7 @@ jobs:
 
             - name: Install dependencies
               working-directory: ./sphiwe-nyoni-profile
-              run: npm ci
+              run: npm ci --legacy-peer-deps
 
             - name: Build Angular app
               working-directory: ./sphiwe-nyoni-profile

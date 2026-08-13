@@ -32,7 +32,7 @@ jobs:
               run: npm ci
 
             - name: Build Angular app
-              run: npm run build
+              run: ng build
 
             - name: Setup Pages
               uses: actions/configure-pages@v5
@@ -40,7 +40,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./dist/<YOUR-APP-NAME>/browser
+                  path: ./dist/sphiwe-nyoni-profile/browser
 
     deploy:
         environment:

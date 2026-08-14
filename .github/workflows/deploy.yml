@@ -34,7 +34,7 @@ jobs:
 
             - name: Build Angular app
               working-directory: ./sphiwe-nyoni-profile
-              run: npm run build -- --configuration production
+              run: npm run build -- --configuration production --base-href "/sphiwe-nyoni-profile/"
 
             - name: Setup Pages
               uses: actions/configure-pages@v5
@@ -42,7 +42,7 @@ jobs:
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v3
               with:
-                  path: ./sphiwe-nyoni-profile/dist/browser
+                  path: ./dist/sphiwe-nyoni-profile/browser
 
     deploy:
         environment:

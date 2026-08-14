@@ -25,6 +25,5 @@ export class HeaderComponent {
   toggleMenu() {
     this.isOpen = !this.isOpen;
     this.showSideMenu = !this.showSideMenu;
-    console.log('Menu toggled:', this.isOpen, this.showSideMenu);
   }
 }

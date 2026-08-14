@@ -16,7 +16,7 @@ export class ProjectsComponent {
       title: 'Barbershop website',
       description:
         'A responsive website for a local barbershop that allows users to book appointments. The website features a admin portal that allows the admin to manage appointments, services, and staff',
-      imageUrl: 'sphiwe-nyoni-profile/assets/phenty-barbershop',
+      imageUrl: 'sphiwe-nyoni-profile/assets/phenty-barbershop.png',
       liveDemoUrl: 'https://phentybarbershop.co.za/',
     },
     {

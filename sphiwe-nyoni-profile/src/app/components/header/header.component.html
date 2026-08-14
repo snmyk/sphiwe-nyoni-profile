@@ -1,14 +1,13 @@
 <header
   class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-lg border-b border-gray-800"
 >
-  <!-- 1. Wrapped the main bar contents inside this padded container -->
   <div class="px-4 py-3 md:px-8 md:py-4">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center justify-between w-full">
         <a href="/" class="text-content-light font-bold text-center">
           sphiwe<span class="text-content-highlight">.</span>
         </a>
-        <nav class="hidden md:flex space-x-4 text-content-dark header-nav">
+        <nav class="hidden md:flex space-x-4 text-content-light header-nav">
           <a
             *ngFor="let link of navLinks"
             href="#{{ link.url }}"
@@ -49,9 +48,8 @@
     </div>
   </div>
 
-  <!-- 2. Changed fixed to absolute and removed top-[60px] so it stacks naturally -->
   <div
-    [ngClass]="showSideMenu ? 'flex' : 'hidden'"
+    *ngIf="isOpen"
     class="md:hidden absolute inset-x-0 top-full bg-background/95 backdrop-blur-xl border-b border-white/5 p-6 space-y-6 bg-black animate-in fade-in slide-in-from-top-4 shadow-2xl"
   >
     <nav

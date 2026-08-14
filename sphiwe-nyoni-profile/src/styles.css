@@ -43,23 +43,6 @@ a:hover {
   border-bottom: var(--accent-color) 1px solid;
 }
 
-.hidden {
-  display: none;
-}
-
 .lime {
   background-color: #10b77f;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block !important;
-  }
-  /* .header-nav {
-    display: none !important;
-  }
-  .small-screen {
-    padding: 3px 5px;
-    margin: 0;
-  } */
 }

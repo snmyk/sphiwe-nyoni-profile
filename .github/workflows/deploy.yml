@@ -34,7 +34,7 @@ jobs:
 
             - name: Build Angular app
               working-directory: ./sphiwe-nyoni-profile
-              run: npm run build -- --configuration production
+              run: npm run build --base-href=/sphiwe-nyoni-profile/ -- --configuration production
 
             - name: Setup Pages
               uses: actions/configure-pages@v5

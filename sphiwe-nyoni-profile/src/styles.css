@@ -55,11 +55,11 @@ a:hover {
   .hamburger {
     display: block !important;
   }
-  .header-nav {
+  /* .header-nav {
     display: none !important;
   }
   .small-screen {
     padding: 3px 5px;
     margin: 0;
-  }
+  } */
 }

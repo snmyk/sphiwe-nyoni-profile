@@ -13,6 +13,13 @@ import { Project } from '../../models/project';
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      title: 'Barbershop website',
+      description:
+        'A responsive website for a local barbershop that allows users to book appointments. The website features a admin portal that allows the admin to manage appointments, services, and staff',
+      imageUrl: 'sphiwe-nyoni-profile/assets/phenty-barbershop',
+      liveDemoUrl: 'https://phentybarbershop.co.za/',
+    },
+    {
       title: 'Movie search app',
       description:
         'A movie search web app that allows users to search for movies by title, genre, or keyword.',

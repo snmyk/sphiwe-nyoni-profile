@@ -9,5 +9,5 @@ import { WorkStatusComponent } from '../../components/work-status/work-status.co
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  protected workStatus: string = 'unavailable';
+  protected workStatus: string = 'partially-available';
 }

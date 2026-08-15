@@ -16,21 +16,21 @@ export class ProjectsComponent {
       title: 'Barbershop website',
       description:
         'A responsive website for a local barbershop that allows users to book appointments. The website features a admin portal that allows the admin to manage appointments, services, and staff.',
-      imageUrl: 'sphiwe-nyoni-profile/assets/phenty-barbershop.png',
+      imageUrl: 'assets/phenty-barbershop.png',
       liveDemoUrl: 'https://phentybarbershop.co.za/',
     },
     {
       title: 'Movie search app',
       description:
         'A movie search web app that allows users to search for movies by title, genre, or keyword.',
-      imageUrl: 'sphiwe-nyoni-profile/assets/incredible-movies.png',
+      imageUrl: 'assets/incredible-movies.png',
       liveDemoUrl: 'https://incredibe-movies.netlify.app/',
       github: 'https://github.com/snmyk/MovieApp',
     },
     {
       title: 'Landing page',
       description: 'A landing page for a tech retail business.',
-      imageUrl: 'sphiwe-nyoni-profile/assets/smart-tech.png',
+      imageUrl: 'assets/smart-tech.png',
       liveDemoUrl: 'https://smarttech6.netlify.app/',
       github: 'https://github.com/snmyk/CODSOFT/tree/main/Task1',
     },
